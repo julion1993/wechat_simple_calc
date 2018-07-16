@@ -197,7 +197,7 @@ Page({
 
     console.log("final:" + final);
     var show = final + "";
-    if(show.indexOf(".") > 0) {
+    if(show.indexOf(".") > 0 && (show.length - show.indexOf(".")) > 9) {
       final = final.toFixed(9);
     }
     this.setData({ "result": final });
