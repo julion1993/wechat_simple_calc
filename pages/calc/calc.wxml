@@ -1,0 +1,45 @@
+<view class="content">
+  <view class="header">
+    <view>
+      <text class="expression">{{expression}}</text>
+    </view>
+  </view>
+
+  <view class="middle">
+    <view>
+      <text class="result">{{result}}</text>
+    </view>
+  </view>
+
+  <view class="buttom">
+    <view class="btnGroup">
+      <view class="button orange" id="{{clear}}" bindtap="clearResult">C</view>
+      <view class="button orange" id="{{back}}" bindtap="backResult">back</view>
+      <view class="button orange" id="{{history}}" bindtap="seeHistory">history</view>
+      <view class="button orange" id="{{plus}}" bindtap="inputOperator">+</view>
+    </view>
+    <view class="btnGroup">
+      <view class="button blue" id="{{seven}}" bindtap="inputNum">7</view>
+      <view class="button blue" id="{{eight}}" bindtap="inputNum">8</view>
+      <view class="button blue" id="{{nine}}" bindtap="inputNum">9</view>
+      <view class="button orange" id="{{minus}}" bindtap="inputOperator">-</view>
+    </view>
+    <view class="btnGroup">
+      <view class="button blue" id="{{four}}" bindtap="inputNum">4</view>
+      <view class="button blue" id="{{five}}" bindtap="inputNum">5</view>
+      <view class="button blue" id="{{six}}" bindtap="inputNum">6</view>
+      <view class="button orange" id="{{multiple}}" bindtap="inputOperator">×</view>
+    </view>
+    <view class="btnGroup">
+      <view class="button blue" id="{{one}}" bindtap="inputNum">1</view>
+      <view class="button blue" id="{{two}}" bindtap="inputNum">2</view>
+      <view class="button blue" id="{{three}}" bindtap="inputNum">3</view>
+      <view class="button orange" id="{{divide}}" bindtap="inputOperator">÷</view>
+    </view>
+    <view class="btnGroup">
+      <view class="button blue" id="{{point}}" bindtap="inputPoint">.</view>
+      <view class="button blue" id="{{zero}}" bindtap="inputNum">0</view>
+      <view class="button orange" style="width: 50%" id="{{equals}}" bindtap="doCalc">=</view>
+    </view>
+  </view>
+</view>

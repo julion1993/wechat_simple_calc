@@ -1,0 +1,6 @@
+<view class="content">
+  <block wx:for="{{logs}}" wx:key>
+    <view class="item" wx:if="{{index%2==0}}" class="green">  第{{index + 1}}条记录: {{item}}</view>
+    <view class="item" wx:else class="red">  第{{index + 1}}条记录: {{item}}</view>
+  </block>
+</view>
